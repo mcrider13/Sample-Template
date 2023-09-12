@@ -1,0 +1,39 @@
+{
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "ref.license",
+                "settings": {
+                    "foreground": "#cccccc"
+                }
+            },
+            {
+                "scope": "ref.snippet",
+                "settings": {
+                    "foreground": "#606060"
+                }
+            },
+            {
+                "scope": "keyword.control.bg3txt",
+                "settings": {
+                    "foreground": "#C586C0"
+                }
+            },
+            {
+                "scope": "keyword.operator.bg3txt",
+                "settings": {
+                    "foreground": "#ffa200"
+                }
+            },
+            {
+                "scope": "string.first-column.bg3txt",
+                "settings": {
+                    "foreground": "#9CDCFE"
+                }
+            }
+        ]
+    },
+    "files.associations": {
+        "*.txt": "bg3txt"
+    }
+}
