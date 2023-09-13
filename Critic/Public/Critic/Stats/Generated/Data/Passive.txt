@@ -1,11 +1,15 @@
-new entry "Passive_Critic"
+// ======================================================================================
+//                    Elder Gods - Passives - Unlock Spells
+// ======================================================================================
+
+new entry "Passive_SpellsElderGods"
 type "PassiveData"
-data "DisplayName" "hd1953a23g140eg4843g9fccg1d46813b7a63;1"
-data "Icon" "Action_MenacingAttack_Melee"
-data "Description" "hbb21816cga013g4799g9e3bgf6710b10043d;1"
+data "DisplayName" "Passive_SpellsElderGods_DisplayName;1"
+data "Description" "Passive_SpellsElderGods_Description;1"
 data "ExtraDescription" "Passive_Generic_ExtraDescription;1"
-data "Boosts" "CriticalHit(AttackRoll,Success,Always);CriticalHit(AttackTarget,Failure,Always)"
-data "Properties" "Highlighted;IsToggled;ToggledDefaultAddToHotbar"
+data "Icon" "Spell_Transmutation_Disintegrate"
+data "Properties" "IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "UnlockSpell(Target_PowerWordKill_Cheat);UnlockSpell(Projectile_Disintegrate_Cheat);UnlockSpell(Projectile_EldritchBlast_Cheat)"
 data "ToggleGroup" ""
 data "StatsFunctors" ""
 data "ToggleOnFunctors" ""
@@ -13,32 +17,1533 @@ data "ToggleOffFunctors" ""
 data "ToggleOnEffect" "VFX_Spells_Cast_Sorcerer_Metamagic_Careful_HeadFX_01:Dummy_HeadFX"
 data "ToggleOffEffect" "VFX_Spells_Cast_Sorcerer_Metamagic_Extended_HeadFX_01:Dummy_HeadFX"
 
-new entry "Passive_ADHD"
+******************************************************************************************
+
+new entry "Passive_CombinationsElderGods"
 type "PassiveData"
-using "Passive_Critic"
-data "DisplayName" "Passive_ADHD_DisplayName;1"
-data "Description" "Passive_ADHD_Description;1"
-data "Icon" "Action_Paladin_DivineSmite"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_CombinationsElderGods_DisplayName;1"
+data "Description" "Passive_CombinationsElderGods_Description;1"
+data "Icon" "Spell_Evocation_MassHealingWord"
+data "Boosts" "UnlockSpell(Shout_Buff_Cheat);UnlockSpell(Shout_HealingWord_Mass_Cheat);UnlockSpell(Shout_Debuff_Cheat)"
+
+******************************************************************************************
+
+new entry "Passive_RestorationElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_RestorationElderGods_DisplayName;1"
+data "Description" "Passive_RestorationElderGods_Description;1"
+data "Icon" "Spell_Abjuration_GreaterRestoration"
+data "Boosts" "UnlockSpell(Target_HealingWord_Cheat);UnlockSpell(Teleportation_Revivify_Cheat);UnlockSpell(Target_GreaterRestoration_Cheat)"
+
+******************************************************************************************
+
+new entry "Passive_TricksElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_TricksElderGods_DisplayName;1"
+data "Description" "Passive_TricksElderGods_Description;1"
+data "Icon" "Spell_Necromancy_FeignDeath"
+data "Boosts" "UnlockSpell(Target_GlobeOfInvulnerability_Cheat);UnlockSpell(Target_GaseousForm_Cheat);UnlockSpell(Target_FeignDeath_Cheat)"
+
+******************************************************************************************
+
+new entry "Passive_DominanceElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_DominanceElderGods_DisplayName;1"
+data "Description" "Passive_DominanceElderGods_Description;1"
+data "Icon" "Spell_Enchantment_DominatePerson"
+data "Boosts" "UnlockSpell(Target_DominatePerson_Cheat);UnlockSpell(Target_HoldPerson_Cheat);UnlockSpell(Target_FleshToStone_Cheat);UnlockSpell(Target_Polymorph_Cheat);UnlockSpell(Target_CrownOfMadness_Cheat);UnlockSpell(Target_HideousLaughter_Cheat);UnlockSpell(Target_IrresistibleDance_Cheat);UnlockSpell(Throw_Telekinesis_Recast_Cheat);UnlockSpell(Target_SpeakWithDead_Cheat)"
+
+******************************************************************************************
+
+new entry "Passive_SummonElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_SummonElderGods_DisplayName;1"
+data "Description" "Passive_SummonElderGods_Description;1"
+data "Icon" "Spell_Conjuration_PlanarAlly"
+data "Boosts" "UnlockSpell(Target_MageHand_Cheat);UnlockSpell(Target_CreateUndead_Cheat);UnlockSpell(Target_PlanarAlly_Container_Cheat)"
+
+******************************************************************************************
+
+new entry "Passive_VisibilityElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_VisibilityElderGods_DisplayName;1"
+data "Description" "Passive_VisibilityElderGods_Description;1"
+data "Icon" "Spell_Evocation_Light"
+data "Boosts" "UnlockSpell(Shout_ProduceFlame_Cheat);UnlockSpell(Target_Daylight_Container_Cheat);UnlockSpell(Target_Invisibility_Cheat)"
+
+******************************************************************************************
+
+new entry "Passive_UtilitiesElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_UtilitiesElderGods_DisplayName;1"
+data "Description" "Passive_UtilitiesElderGods_Description;1"
+data "Icon" "Spell_Transmutation_Knock"
+data "Boosts" "UnlockSpell(Target_EnlargeReduce_Cheat);UnlockSpell(Shout_DisguiseSelf_Cheat);UnlockSpell(Target_CreateDestroyWater_Cheat);UnlockSpell(Teleportation_DimensionDoor_Cheat);UnlockSpell(Teleportation_ArcaneGate_Cheat);UnlockSpell(Target_OpenDoors_Cheat);UnlockSpell(Target_MistyStep_Cheat);UnlockSpell(Target_BenignTransposition_Teleport_Cheat);UnlockSpell(Target_ArcaneRecovery_Cheat)"
+
+******************************************************************************************
+
+new entry "Passive_IllithidElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_IllithidElderGods_DisplayName;1"
+data "Description" "Passive_IllithidElderGods_Description;1"
+data "Icon" "TadpoleSuperPower_Repulsor"
+data "Boosts" "UnlockSpell(Target_TAD_BlackHole_Recast_Cheat);UnlockSpell(Shout_Repulsor_Cheat);UnlockSpell(Shout_TAD_DisplacerBeast_Cheat)"
+
+******************************************************************************************
+
+new entry "Passive_SidePanelElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_SidePanelElderGods_DisplayName;1"
+data "Description" "Passive_SidePanelElderGods_Description;1"
+data "Icon" "Spell_Transmutation_Fly"
+data "Boosts" "UnlockSpell(Projectile_Fly_Spell_Cheat)"
+
+******************************************************************************************
+
+new entry "Passive_BuffsElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_BuffsElderGods_DisplayName;1"
+data "Description" "Passive_BuffsElderGods_Description;1"
+data "Icon" "Spell_Divination_DetectThoughts"
 data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
-data "Boosts" "ActionResource(ActionPoint,6,0);ActionResource(BonusActionPoint,6,0);ActionResource(ReactionActionPoint,6,0)"
+data "Boosts" "UnlockSpell(Shout_DetectThoughts_Cheat);UnlockSpell(Shout_FeatherFall_Cheat);UnlockSpell(Shout_Jump_Cheat);UnlockSpell(Shout_SeeInvisibility_Cheat);UnlockSpell(Shout_SpeakWithAnimals_Cheat);UnlockSpell(Shout_Darkvision_Cheat);UnlockSpell(Shout_FreedomOfMovement_Cheat);UnlockSpell(Target_Haste_Cheat);UnlockSpell(Shout_Sanctuary_Cheat);UnlockSpell(Shout_ProtectionFromEvilAndGood_Cheat);UnlockSpell(Shout_EnhanceAbility_BullsStrength_Cheat);UnlockSpell(Shout_DeathWard_Cheat)"
+
+// ======================================================================================
+//                      Elder Gods - Passives - Toggle Groups
+// ======================================================================================
+
+new entry "Passive_TouchElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_TouchElderGods_DisplayName;1"
+data "Description" "Passive_TouchElderGods_Description;1"
+data "Icon" "Spell_Enchantment_Heroism"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "Resistance(All,Immune)"
+data "ToggleGroup" "TouchElderGods_OR_ResistanceElderGods"
+
+******************************************************************************************
+
+new entry "Passive_ResistanceElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_ResistanceElderGods_DisplayName;1"
+data "Description" "Passive_ResistanceElderGods_Description;1"
+data "Icon" "Spell_Abjuration_Resistance"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "Resistance(All,Resistant)"
+data "ToggleGroup" "TouchElderGods_OR_ResistanceElderGods"
+
+******************************************************************************************
+
+new entry "Passive_CriticalMissElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_CriticalMissElderGods_DisplayName;1"
+data "Description" "Passive_CriticalMissElderGods_Description;1"
+data "Icon" "Action_OpeningAttack"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "CriticalHit(AttackTarget,Failure,Always)"
+data "ToggleGroup" "CriticalMissElderGods_OR_CriticalChanceElderGods"
+
+******************************************************************************************
+
+new entry "Passive_CriticalChanceElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_CriticalChanceElderGods_DisplayName;1"
+data "Description" "Passive_CriticalChanceElderGods_Description;1"
+data "Icon" "Action_MenacingAttack_Melee"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "CriticalHit(AttackTarget,Success,Never)"
+data "ToggleGroup" "CriticalMissElderGods_OR_CriticalChanceElderGods"
+
+******************************************************************************************
+
+new entry "Passive_ImmunityElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_ImmunityElderGods_DisplayName;1"
+data "Description" "Passive_ImmunityElderGods_Description;1"
+data "Icon" "Spell_Illusion_GreaterInvisibility"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "StatusImmunity(SG_Condition);StatusImmunity(SG_Incapacitated);StatusImmunity(SG_Invisible);StatusImmunity(SG_Polymorph);StatusImmunity(SG_Blinded);StatusImmunity(SG_Charmed);StatusImmunity(SG_Cursed);StatusImmunity(SG_DifficultTerrain);StatusImmunity(SG_Disease);StatusImmunity(SG_Dominated);StatusImmunity(SG_Frightened);StatusImmunity(SG_Mad);StatusImmunity(SG_Paralyzed);StatusImmunity(SG_Petrified);StatusImmunity(SG_Poisoned);StatusImmunity(SG_Possessed);StatusImmunity(SG_Prone);StatusImmunity(SG_Restrained);StatusImmunity(SG_Sleeping);StatusImmunity(SG_Stunned);StatusImmunity(SG_Unconscious)"
+data "ToggleGroup" "ImmunityElderGods_OR_PartialImmunityElderGods"
+
+******************************************************************************************
 
 new entry "Passive_PartialImmunityElderGods"
 type "PassiveData"
-using "Passive_Critic"
+using "Passive_SpellsElderGods"
 data "DisplayName" "Passive_PartialImmunityElderGods_DisplayName;1"
 data "Description" "Passive_PartialImmunityElderGods_Description;1"
 data "Icon" "Spell_Transmutation_Blink"
 data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
 data "Boosts" "StatusImmunity(SG_Blinded);StatusImmunity(SG_Charmed);StatusImmunity(SG_Cursed);StatusImmunity(SG_DifficultTerrain);StatusImmunity(SG_Disease);StatusImmunity(SG_Dominated);StatusImmunity(SG_Frightened);StatusImmunity(SG_Mad);StatusImmunity(SG_Paralyzed);StatusImmunity(SG_Petrified);StatusImmunity(SG_Poisoned);StatusImmunity(SG_Possessed);StatusImmunity(SG_Prone);StatusImmunity(SG_Restrained);StatusImmunity(SG_Sleeping);StatusImmunity(SG_Stunned);StatusImmunity(SG_Unconscious)"
+data "ToggleGroup" "ImmunityElderGods_OR_PartialImmunityElderGods"
+
+******************************************************************************************
+
+new entry "Passive_AttackRollElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_AttackRollElderGods_DisplayName;1"
+data "Description" "Passive_AttackRollElderGods_Description;1"
+data "Icon" "Spell_Evocation_SearingSmite"
+data "DescriptionParams" "5"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "RollBonus(Attack,5)"
+data "ToggleGroup" "AttackRollElderGods_OR_AttackRollBonusElderGods"
+
+******************************************************************************************
+
+new entry "Passive_AttackRollBonusElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_AttackRollBonusElderGods_DisplayName;1"
+data "Description" "Passive_AttackRollElderGods_Description;1"
+data "Icon" "Spell_Conjuration_ConjureBarrage"
+data "DescriptionParams" "10"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "RollBonus(Attack,10)"
+data "ToggleGroup" "AttackRollElderGods_OR_AttackRollBonusElderGods"
+
+******************************************************************************************
+
+new entry "Passive_CriticalHitElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_CriticalHitElderGods_DisplayName;1"
+data "Description" "Passive_CriticalHitElderGods_Description;1"
+data "Icon" "Action_Barbarian_MagicAwareness"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "CriticalHit(AttackRoll,Success,Always)"
+
+// ======================================================================================
+//             Elder Gods - Passives - Actions, Extra Actions and Initiative 
+// ======================================================================================
+
+new entry "Passive_ActionsElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_ActionsElderGods_DisplayName;1"
+data "Description" "Passive_ActionsElderGods_Description;1"
+data "Icon" "Spell_Transmutation_MagicWeapon"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "ActionResource(ActionPoint,3,0);ActionResource(BonusActionPoint,3,0);ActionResource(ReactionActionPoint,3,0)"
+
+******************************************************************************************
+
+new entry "Passive_ExtraActionsElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_ExtraActionsElderGods_DisplayName;1"
+data "Description" "Passive_ExtraActionsElderGods_Description;1"
+data "Icon" "Action_Paladin_DivineSmite"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "ActionResource(ActionPoint,6,0);ActionResource(BonusActionPoint,6,0);ActionResource(ReactionActionPoint,6,0)"
+
+******************************************************************************************
+
+new entry "Passive_InitiativeElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_InitiativeElderGods_DisplayName;1"
+data "Description" "Passive_InitiativeElderGods_Description;1"
+data "Icon" "Spell_Abjuration_ProtectionFromEvilAndGood"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "Initiative(30)"
+
+// ======================================================================================
+//     Elder Gods - Passives - Extra Damage, Attack Roll Advantage and Disadvantage
+// ======================================================================================
 
 new entry "Passive_ExtraDamageElderGods"
 type "PassiveData"
-using "Passive_Critic"
+using "Passive_SpellsElderGods"
 data "DisplayName" "Passive_ExtraDamageElderGods_DisplayName;1"
 data "Description" "Passive_ExtraDamageElderGods_Description;1"
 data "Icon" "Spell_Evocation_BrandingSmite_Melee"
 data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
 data "Boosts" "IF(IsMeleeAttack() or IsRangedAttack()):CharacterWeaponDamage(10d4,Force);IF(IsSpell()):DamageBonus(10d4)"
+
+******************************************************************************************
+
+new entry "Passive_AttackRollAdvantageElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_AttackRollAdvantageElderGods_DisplayName;1"
+data "Description" "Passive_AttackRollAdvantageElderGods_Description;1"
+data "Icon" "Spell_Evocation_BlindingSmite"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "Advantage(AttackRoll)"
+
+******************************************************************************************
+
+new entry "Passive_DisadvantageElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_DisadvantageElderGods_DisplayName;1"
+data "Description" "Passive_DisadvantageElderGods_Description;1"
+data "Icon" "Spell_Necromancy_BestowCurse_AttackDisadvantage"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "Disadvantage(AttackTarget)"
+
+// ======================================================================================
+//                Elder Gods - Passives - Ability, Skill Proficiency and Luck
+// ======================================================================================
+
+new entry "Passive_AbilityElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_AbilityElderGods_DisplayName;1"
+data "Description" "Passive_AbilityElderGods_Description;1"
+data "Icon" "Spell_Transmutation_EnhanceAbility"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "Ability(Strength,10);Ability(Dexterity,10);Ability(Constitution,10);Ability(Intelligence,10);Ability(Wisdom,10);Ability(Charisma,10)"
+
+******************************************************************************************
+
+new entry "Passive_SkillProficiencyElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_SkillProficiencyElderGods_DisplayName;1"
+data "Description" "Passive_SkillProficiencyElderGods_Description;1"
+data "Icon" "Spell_Abjuration_BladeWard"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "ProficiencyBonus(Skill,Acrobatics);ProficiencyBonus(Skill,AnimalHandling);ProficiencyBonus(Skill,Arcana);ProficiencyBonus(Skill,Athletics);ProficiencyBonus(Skill,Deception);ProficiencyBonus(Skill,History);ProficiencyBonus(Skill,Insight);ProficiencyBonus(Skill,Intimidation);ProficiencyBonus(Skill,Investigation);ProficiencyBonus(Skill,Medicine);ProficiencyBonus(Skill,Nature);ProficiencyBonus(Skill,Perception);ProficiencyBonus(Skill,Performance);ProficiencyBonus(Skill,Persuasion);ProficiencyBonus(Skill,Religion);ProficiencyBonus(Skill,SleightOfHand);ProficiencyBonus(Skill,Stealth);ProficiencyBonus(Skill,Survival)"
+
+******************************************************************************************
+
+new entry "Passive_LuckElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_LuckElderGods_DisplayName;1"
+data "Description" "hc07b1971ge2a0g40cbg985eg50d7ddf1029f;1"
+data "Icon" "Skill_Sorcerer_Passive_BendLuck"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "Reroll(Attack,1,true);Reroll(RawAbility,1,true);Reroll(SkillCheck,1,true);Reroll(SavingThrow,1,true)"
+
+// ======================================================================================
+//            Elder Gods - Passives - Advantage, Roll Bonus and Skills
+// ======================================================================================
+
+new entry "Passive_AdvantageElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_AdvantageElderGods_DisplayName;1"
+data "Description" "Passive_AdvantageElderGods_Description;1"
+data "Icon" "Spell_Divination_Guidance"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "Advantage(AllAbilities);Advantage(AllSavingThrows);Advantage(Concentration)" 
+
+******************************************************************************************
+
+new entry "Passive_RollBonusElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_RollBonusElderGods_DisplayName;1"
+data "Description" "Passive_RollBonusElderGods_Description;1"
+data "DescriptionParams" "30"
+data "Icon" "Spell_Evocation_DivineFavor"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "RollBonus(RawAbility,30);RollBonus(SkillCheck,30);RollBonus(SavingThrow,30);RollBonus(DeathSavingThrow,30)"
+
+******************************************************************************************
+
+new entry "Passive_SkillsElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_SkillsElderGods_DisplayName;1"
+data "Description" "Passive_SkillsElderGods_Description;1"
+data "Icon" "Spell_Abjuration_DispelEvilAndGood"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "Skill(Acrobatics,20);Skill(AnimalHandling,20);Skill(Arcana,20);Skill(Athletics,20);Skill(Deception,20);Skill(History,20);Skill(Insight,20);Skill(Intimidation,20);Skill(Investigation,20);Skill(Medicine,20);Skill(Nature,20);Skill(Perception,20);Skill(Performance,20);Skill(Persuasion,20);Skill(Religion,20);Skill(SleightOfHand,20);Skill(Stealth,20);Skill(Survival,20)"
+
+// ======================================================================================
+//            Elder Gods - Passives - Speed, Extra Speed and Jump
+// =====================================================================================
+
+new entry "Passive_SpeedElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_SpeedElderGods_DisplayName;1"
+data "Description" "Passive_SpeedElderGods_Description;1"
+data "Icon" "Spell_Transmutation_Longstrider"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "ActionResource(Movement,50,0)"
+
+******************************************************************************************
+
+new entry "Passive_ExtraSpeedElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_ExtraSpeedElderGods_DisplayName;1"
+data "Description" "Passive_ExtraSpeedElderGods_Description;1"
+data "Icon" "Spell_Conjuration_MistyStep"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "ActionResource(Movement,100,0)"
+
+******************************************************************************************
+
+new entry "Passive_JumpElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_JumpElderGods_DisplayName;1"
+data "Description" "Passive_JumpElderGods_Description;1"
+data "Icon" "Spell_Transmutation_LongJump"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "JumpMaxDistanceMultiplier(10);IgnoreFallDamage()"
+
+// ======================================================================================
+//             Elder Gods - Passives - Armor Class, Health and Weight
+// ======================================================================================
+
+new entry "Passive_ArmorClassElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_ArmorClassElderGods_DisplayName;1"
+data "Description" "Passive_ArmorClassElderGods_Description;1"
+data "Icon" "Spell_Abjuration_MageArmor"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "AC(30)"
+
+******************************************************************************************
+
+new entry "Passive_HealthElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_HealthElderGods_DisplayName;1"
+data "Description" "Passive_HealthElderGods_Description;1"
+data "Icon" "Spell_Necromancy_FalseLife"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "TemporaryHP(30)"
+
+******************************************************************************************
+
+new entry "Passive_WeightElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_WeightElderGods_DisplayName;1"
+data "Description" "Passive_WeightElderGods_Description;1"
+data "Icon" "Spell_Transmutation_Thaumaturgy"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "CarryCapacityMultiplier(30)"
+
+// ======================================================================================
+//             Elder Gods - Passives - Action Resource Modifiers
+// ======================================================================================
+
+new entry "Passive_SpellCastingElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_SpellCastingElderGods_DisplayName;1"
+data "Description" "Passive_SpellCastingElderGods_Description;1"
+data "Icon" "Spell_Evocation_BurningHands"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "ActionResourceConsumeMultiplier(SpellSlot,0,1);ActionResourceConsumeMultiplier(SpellSlot,0,2);ActionResourceConsumeMultiplier(SpellSlot,0,3);ActionResourceConsumeMultiplier(SpellSlot,0,4);ActionResourceConsumeMultiplier(SpellSlot,0,5);ActionResourceConsumeMultiplier(SpellSlot,0,6);ActionResourceConsumeMultiplier(SpellSlot,0,7);ActionResourceConsumeMultiplier(SpellSlot,0,8);ActionResourceConsumeMultiplier(SpellSlot,0,9);ActionResourceConsumeMultiplier(SpellSlot,0,10)"
+
+******************************************************************************************
+
+new entry "Passive_WarlockGraspElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_WarlockGraspElderGods_DisplayName;1"
+data "Description" "Passive_WarlockGraspElderGods_Description;1"
+data "Icon" "Spell_Abjuration_PlanarBinding"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "ActionResourceConsumeMultiplier(WarlockSpellSlot,0,1);ActionResourceConsumeMultiplier(WarlockSpellSlot,0,2);ActionResourceConsumeMultiplier(WarlockSpellSlot,0,3);ActionResourceConsumeMultiplier(WarlockSpellSlot,0,4);ActionResourceConsumeMultiplier(WarlockSpellSlot,0,5);ActionResourceConsumeMultiplier(WarlockSpellSlot,0,6);ActionResourceConsumeMultiplier(WarlockSpellSlot,0,7);ActionResourceConsumeMultiplier(WarlockSpellSlot,0,8);ActionResourceConsumeMultiplier(WarlockSpellSlot,0,9);ActionResourceConsumeMultiplier(WarlockSpellSlot,0,10)"
+
+******************************************************************************************
+
+new entry "Passive_ResourcesElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_ResourcesElderGods_DisplayName;1"
+data "Description" "Passive_ResourcesElderGods_Description;1"
+data "Icon" "Spell_Evocation_CrusadersMantle"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "ActionResourceConsumeMultiplier(ArcaneRecoveryPoint,0,0);ActionResourceConsumeMultiplier(BardicInspiration,0,0);ActionResourceConsumeMultiplier(ChannelDivinity,0,0);ActionResourceConsumeMultiplier(ChannelOath,0,0);ActionResourceConsumeMultiplier(FungalInfestationCharge,0,0);ActionResourceConsumeMultiplier(HitDice,0,0);ActionResourceConsumeMultiplier(Interrupt_HellishRebukeTiefling_Charge,0,0);ActionResourceConsumeMultiplier(Interrupt_HellishRebukeWarlockMI_Charge,0,0);ActionResourceConsumeMultiplier(KiPoint,0,0);ActionResourceConsumeMultiplier(LayOnHandsCharge,0,0);ActionResourceConsumeMultiplier(LuckPoint,0,0);ActionResourceConsumeMultiplier(NaturalRecoveryPoint,0,0);ActionResourceConsumeMultiplier(Rage,0,0);ActionResourceConsumeMultiplier(RitualPoint,0,0);ActionResourceConsumeMultiplier(ShadowSpellSlot,0,0);ActionResourceConsumeMultiplier(SorceryPoint,0,0);ActionResourceConsumeMultiplier(SuperiorityDie,0,0);ActionResourceConsumeMultiplier(TidesOfChaos,0,0);ActionResourceConsumeMultiplier(WarPriestActionPoint,0,0);ActionResourceConsumeMultiplier(WeaponActionPoint,0,0);ActionResourceConsumeMultiplier(WildShape,0,0)"
+
+// ======================================================================================
+//     Elder Gods - Passives - Weapon Proficiency, Armor Proficiency and Performance
+// ======================================================================================
+
+new entry "Passive_ProficiencyElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_ProficiencyElderGods_DisplayName;1"
+data "Description" "Passive_ProficiencyElderGods_Description;1"
+data "Icon" "Action_SlashingFlourish_Melee"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"
+
+******************************************************************************************
+
+new entry "Passive_ArmorProficiencyElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_ArmorProficiencyElderGods_DisplayName;1"
+data "Description" "Passive_ArmorProficiencyElderGods_Description;1"
+data "Icon" "Action_DefensiveFlourish_Melee"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields)"
+
+******************************************************************************************
+
+new entry "Passive_PerformanceElderGods"
+type "PassiveData"
+using "Passive_SpellsElderGods"
+data "DisplayName" "Passive_PerformanceElderGods_DisplayName;1"
+data "Description" "Passive_PerformanceElderGods_Description;1"
+data "Icon" "Action_Bard_GrantBardicInspiration"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;Highlighted"
+data "Boosts" "Proficiency(MusicalInstrument)"
+
+// ======================================================================================
+//                             Elder Gods - Spells - Damage
+// ======================================================================================
+
+new entry "Target_PowerWordKill_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_PowerWordKill"
+data "TargetRadius" "30"
+data "TargetConditions" "Character() and not Dead()"
+data "AmountOfTargets" "10"
+data "DescriptionParams" "100%"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Projectile_Disintegrate_Cheat"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_Disintegrate"
+data "TargetRadius" "30"
+data "AmountOfTargets" "10"
+data "SpellSuccess" "DealDamage(1337,Force,Magical)"
+data "DescriptionParams" "DealDamage(1337,Force)"
+data "TooltipDamageList" "DealDamage(1337,Force)"
+data "PowerLevel" "10"
+data "SpellRoll" ""
+data "TooltipAttackSave" ""
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Projectile_EldritchBlast_Cheat"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_EldritchBlast"
+data "TargetRadius" "30"
+data "AmountOfTargets" "10"
+data "SpellSuccess" "DealDamage(666,Force,Magical)"
+data "TooltipDamageList" "DealDamage(666,Force)"
+data "SpellRoll" ""
+data "TooltipAttackSave" ""
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+// ======================================================================================
+//                             Elder Gods - Spells - Buff
+// ======================================================================================
+
+new entry "Shout_DetectThoughts_Cheat"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_DetectThoughts"
+data "AreaRadius" "5"
+data "TargetConditions" "Ally()"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "RitualCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Shout_FeatherFall_Cheat"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_FeatherFall"
+data "AreaRadius" "5"
+data "SpellProperties" "ApplyStatus(FEATHER_FALL_CHEAT,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(FEATHER_FALL_CHEAT,100,-1)"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "RitualCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "FEATHER_FALL_CHEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "FEATHER_FALL"
+data "StatusEffect" ""
+
+******************************************************************************************
+
+new entry "Shout_Jump_Cheat"
+type "SpellData"
+using "Target_Jump"
+data "SpellType" "Shout"
+data "TargetRadius" "0"
+data "OriginTargetRadius" "0"
+data "AreaRadius" "5"
+data "TargetConditions" "Ally()"
+data "SpellProperties" "ApplyStatus(LONG_JUMP_CHEAT,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(LONG_JUMP_CHEAT,100,-1)"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "RitualCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "LONG_JUMP_CHEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "LONG_JUMP"
+data "StatusEffect" ""
+
+******************************************************************************************
+
+new entry "Shout_SeeInvisibility_Cheat"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_SeeInvisibility"
+data "AreaRadius" "5"
+data "TargetConditions" "Ally()"
+data "SpellProperties" "ApplyStatus(SEE_INVISIBILITY_CHEAT,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(SEE_INVISIBILITY_CHEAT,100,-1)"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "SEE_INVISIBILITY_CHEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "SEE_INVISIBILITY"
+data "StatusEffect" ""
+
+******************************************************************************************
+
+new entry "Shout_SpeakWithAnimals_Cheat"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_SpeakWithAnimals"
+data "AreaRadius" "5"
+data "TargetConditions" "Ally()"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "RitualCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Shout_Darkvision_Cheat"
+type "SpellData"
+using "Target_Darkvision"
+data "SpellType" "Shout"
+data "AreaRadius" "5"
+data "TargetRadius" "0"
+data "TargetConditions" "Ally()"
+data "DescriptionParams" "Distance(30)"
+data "SpellProperties" "ApplyStatus(DARKVISION_CHEAT,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(DARKVISION_CHEAT,100,-1)"
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+new entry "DARKVISION_CHEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "DARKVISION"
+data "DescriptionParams" "Distance(30)"
+data "Boosts" "DarkvisionRangeMin(30);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989)"
+
+******************************************************************************************
+
+new entry "Shout_FreedomOfMovement_Cheat"
+type "SpellData"
+using "Target_FreedomOfMovement"
+data "SpellType" "Shout"
+data "TargetRadius" "0"
+data "OriginTargetRadius" "0"
+data "AreaRadius" "5"
+data "TargetConditions" "Ally()"
+data "ExtraDescription" ""
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_Haste_Cheat"
+type "SpellData"
+using "Target_Haste"
+data "SpellType" "Shout"
+data "AreaRadius" "5"
+data "TargetRadius" "0"
+data "OriginTargetRadius" "0"
+data "TargetConditions" "Ally()"
+data "SpellProperties" "ApplyStatus(HASTE_CHEAT,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(HASTE_CHEAT,100,-1)"
+data "TooltipPermanentWarnings" ""
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+new entry "HASTE_CHEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "HASTE"
+data "OnRemoveFunctors" ""
+data "ApplyEffect" ""
+data "StatusEffect" ""
+
+******************************************************************************************
+
+new entry "Shout_Sanctuary_Cheat"
+type "SpellData"
+using "Target_Sanctuary"
+data "SpellType" "Shout"
+data "AreaRadius" "5"
+data "TargetConditions" "Ally()"
+data "SpellProperties" "ApplyStatus(SANCTUARY_CHEAT,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(SANCTUARY_CHEAT,100,-1)"
+data "ExtraDescription" ""
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+new entry "SANCTUARY_CHEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "SANCTUARY"
+data "OnRemoveFunctors" ""
+data "StatusEffect" ""
+data "ManagedStatusEffectGroup" ""
+
+******************************************************************************************
+
+new entry "Shout_ProtectionFromEvilAndGood_Cheat"
+type "SpellData"
+using "Target_ProtectionFromEvilAndGood"
+data "SpellType" "Shout"
+data "TargetRadius" "0"
+data "OriginTargetRadius" "0"
+data "AreaRadius" "5"
+data "TargetConditions" "Ally()"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Shout_EnhanceAbility_BullsStrength_Cheat"
+type "SpellData"
+using "Target_EnhanceAbility_BullsStrength"
+data "SpellType" "Shout"
+data "TargetRadius" "0"
+data "OriginTargetRadius" "0"
+data "AreaRadius" "5"
+data "SpellContainerID" ""
+data "TargetConditions" "Ally()"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Shout_DeathWard_Cheat"
+type "SpellData"
+using "Target_DeathWard"
+data "SpellType" "Shout"
+data "TargetRadius" "0"
+data "OriginTargetRadius" "0"
+data "AreaRadius" "5"
+data "TargetConditions" "Ally()"
+data "SpellProperties" "ApplyStatus(DEATH_WARD_CHEAT,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(DEATH_WARD_CHEAT,100,-1)"
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+new entry "DEATH_WARD_CHEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "DEATH_WARD"
+data "StatusEffect" ""
+
+// ======================================================================================
+//                             Elder Gods - Spells - Combination
+// ======================================================================================
+
+new entry "Shout_Buff_Cheat"
+type "SpellData"
+using "Target_ProtectionFromEvilAndGood"
+data "SpellType" "Shout"
+data "AreaRadius" "5"
+data "TargetConditions" "Ally() and not Dead()"
+data "SpellProperties" "ApplyStatus(DETECT_THOUGHTS,100,-1);ApplyStatus(FEATHER_FALL_CHEAT,100,-1);ApplyStatus(LONG_JUMP_CHEAT,100,-1);ApplyStatus(SEE_INVISIBILITY_CHEAT,100,-1);ApplyStatus(PETPAL,100,-1);ApplyStatus(DARKVISION_CHEAT,100,-1);ApplyStatus(FREEDOM_OF_MOVEMENT,100,-1);ApplyStatus(HASTE_CHEAT,100,-1);ApplyStatus(SANCTUARY_CHEAT,100,-1);ApplyStatus(PROTECTION_FROM_EVIL_AND_GOOD,100,-1);ApplyStatus(BULLS_STRENGTH,100,-1);ApplyStatus(DEATH_WARD_CHEAT,100,-1);ApplyStatus(SPEAK_WITH_DEAD_AURA_CHEAT,100,-1)"
+data "TooltipStatusApply" ""
+data "Icon" "Spell_Evocation_CrusadersMantle"
+data "DisplayName" "Shout_Buff_Cheat_DisplayName;1"
+data "Description" "Shout_Buff_Cheat_Description;1"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
+data "ExtraDescription" ""
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Shout_HealingWord_Mass_Cheat"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_HealingWord_Mass"
+data "AreaRadius" "5"
+data "SpellProperties" "RegainHitPoints(Target.MaxHP)"
+data "DescriptionParams" "RegainHitPoints(Target.MaxHP)"
+data "TooltipDamageList" "RegainHitPoints(Target.MaxHP)"
+data "TargetConditions" "Ally() and not Dead()"
+data "TooltipPermanentWarnings" ""
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Shout_Debuff_Cheat"
+type "SpellData"
+using "Target_Sanctuary"
+data "SpellType" "Shout"
+data "AreaRadius" "5"
+data "TargetConditions" "Ally() and not Dead()"
+data "SpellProperties" "RemoveStatus(DETECT_THOUGHTS);RemoveStatus(FEATHER_FALL_CHEAT);RemoveStatus(LONG_JUMP_CHEAT);RemoveStatus(SEE_INVISIBILITY_CHEAT);RemoveStatus(PETPAL);RemoveStatus(DARKVISION_CHEAT);RemoveStatus(FREEDOM_OF_MOVEMENT);RemoveStatus(HASTE_CHEAT);RemoveStatus(SANCTUARY_CHEAT);RemoveStatus(PROTECTION_FROM_EVIL_AND_GOOD);RemoveStatus(BULLS_STRENGTH);RemoveStatus(DEATH_WARD_CHEAT);RemoveStatus(SPEAK_WITH_DEAD_AURA_CHEAT)"
+data "TooltipStatusApply" ""
+data "Icon" "Skill_Druid_WildShape_Dismiss"
+data "DisplayName" "Shout_Debuff_Cheat_DisplayName;1"
+data "Description" "Shout_Debuff_Cheat_Description;1"
+data "ExtraDescription" ""
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+// ======================================================================================
+//                             Elder Gods - Spells - Restoration
+// ======================================================================================
+
+new entry "Target_HealingWord_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_HealingWord"
+data "TargetRadius" "30"
+data "TargetConditions" "Character() and not Dead()"
+data "SpellProperties" "RegainHitPoints(Target.MaxHP)"
+data "TooltipDamageList" "RegainHitPoints(Target.MaxHP)"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipPermanentWarnings" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Teleportation_Revivify_Cheat"
+type "SpellData"
+data "SpellType" "Teleportation"
+using "Teleportation_Revivify"
+data "TargetRadius" "30"
+data "AreaRadius" "0"
+data "OriginSpellProperties" "RegainHitPoints(Target.MaxHP);Resurrect(100,100);RestoreResource(Movement,100%,0);UseActionResource(ActionPoint,100%,0);UseActionResource(BonusActionPoint,100%,0);ApplyStatus(RESURRECTING,100,1)"
+data "OriginTargetConditions" "Dead() and not Item()"
+data "CycleConditions" "Dead() and not Item()"
+data "DisplayName" "h7b0dbfb5g2729g476bg92e7gbe8148deb3fd;1"
+data "Description" "Teleportation_Revivify_Cheat_Description;1"
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_GreaterRestoration_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_GreaterRestoration"
+data "TargetRadius" "30"
+data "SpellProperties" "RemoveStatus(ASTARION_WEAK);RemoveStatus(SG_Blinded);RemoveStatus(SG_Charmed);RemoveStatus(SG_Dominated);RemoveStatus(SG_Cursed);RemoveStatus(SG_DifficultTerrain);RemoveStatus(SG_Disease);RemoveStatus(SG_Frightened);RemoveStatus(SG_Mad);RemoveStatus(SG_Paralyzed);RemoveStatus(SG_Petrified);RemoveStatus(SG_Poisoned);RemoveStatus(SG_Possessed);RemoveStatus(SG_Prone);RemoveStatus(SG_Restrained);RemoveStatus(SG_Sleeping);RemoveStatus(SG_Stunned);RemoveStatus(SG_Unconscious);RemoveStatus(SG_Condition);RemoveStatus(SG_Polymorph);RemoveStatus(SG_Invisible);RemoveStatus(SG_Incapacitated)"
+data "Description" "Target_GreaterRestoration_Cheat_Description;1"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+// ======================================================================================
+//                             Elder Gods - Spells - Tricks
+// ======================================================================================
+
+new entry "Target_GlobeOfInvulnerability_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_GlobeOfInvulnerability"
+data "TargetRadius" "30"
+data "SpellProperties" "GROUND:Summon(edca6656-dc8c-410b-9f16-fcc02d5ed803,10,Projectile_AiHelper_Silence,,,GLOBE_OF_INVULNERABILITY_AURA)"
+data "TooltipStatusApply" "ApplyStatus(GLOBE_OF_INVULNERABILITY,100,10)"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_GaseousForm_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_GaseousForm"
+data "TargetRadius" "30"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell;UnavailableInDialogs"
+data "TooltipPermanentWarnings" ""
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "ExtraDescription" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_FeignDeath_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_FeignDeath"
+data "TargetRadius" "30"
+data "AmountOfTargets" "4"
+data "SpellProperties" "ApplyStatus(FEIGN_DEATH,100,1)"
+data "TooltipStatusApply" "ApplyStatus(FEIGN_DEATH,100,1)"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+// ======================================================================================
+//                             Elder Gods - Spells - Dominance
+// ======================================================================================
+
+new entry "Target_DominatePerson_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_DominatePerson"
+data "TargetRadius" "30"
+data "TargetConditions" "Character() and not Self() and not Dead()"
+data "DisplayName" "Target_DominatePerson_Cheat_DisplayName;1"
+data "Description" "Target_DominatePerson_Cheat_Description;1"
+data "SpellSuccess" "ApplyStatus(DOMINATE_PERSON_CHEAT,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(DOMINATE_PERSON_CHEAT,100,-1)"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellRoll" ""
+data "TooltipAttackSave" ""
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "DOMINATE_PERSON_CHEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "DOMINATE_PERSON"
+data "RemoveConditions" ""
+data "RemoveEvents" ""
+data "TooltipSave" ""
+
+******************************************************************************************
+
+new entry "Target_HoldPerson_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_HoldPerson"
+data "TargetRadius" "30"
+data "TargetConditions" "Character() and not Self() and not Dead()"
+data "DisplayName" "Target_HoldPerson_Cheat_DisplayName;1"
+data "Description" "Target_HoldPerson_Cheat_Description;1"
+data "SpellSuccess" "ApplyStatus(HOLD_PERSON_CHEAT,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(HOLD_PERSON_CHEAT,100,-1)"
+data "DescriptionParams" "Distance(30)"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;IsHarmful;IgnorePreviouslyPickedEntities"
+data "SpellRoll" ""
+data "TooltipAttackSave" ""
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "HOLD_PERSON_CHEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "HOLD_PERSON"
+data "DescriptionParams" "Distance(30)"
+data "RemoveConditions" ""
+data "RemoveEvents" ""
+data "TooltipSave" ""
+
+******************************************************************************************
+
+new entry "Target_FleshToStone_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_FleshToStone"
+data "TargetRadius" "30"
+data "TargetConditions" "Character() and not Self() and not Dead()"
+data "Description" "Target_FleshToStone_Cheat_Description;1"
+data "SpellRoll" ""
+data "TooltipAttackSave" ""
+data "SpellSuccess" "ApplyStatus(PETRIFIED,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(PETRIFIED,100,-1)"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
+data "ExtraDescription" ""
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_Polymorph_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Polymorph"
+data "TargetRadius" "30"
+data "TargetConditions" "Character() and not Self() and not Dead()"
+data "SpellRoll" ""
+data "TooltipAttackSave" ""
+data "SpellSuccess" "ApplyStatus(POLYMORPH_SHEEP,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(POLYMORPH_SHEEP,100,-1)"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
+data "UseCosts" ""
+data "ExtraDescription" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_CrownOfMadness_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_CrownOfMadness"
+data "TargetRadius" "30"
+data "TargetConditions" "Character() and not Self() and not Dead()"
+data "Description" "Target_CrownOfMadness_Cheat_Description;1"
+data "SpellSuccess" "ApplyStatus(CROWN_OF_MADNESS,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(CROWN_OF_MADNESS,100,-1)"
+data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension"
+data "SpellRoll" ""
+data "TooltipAttackSave" ""
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_HideousLaughter_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_HideousLaughter"
+data "TargetRadius" "30"
+data "TargetConditions" "Character() and not Self() and not Dead()"
+data "SpellSuccess" "ApplyStatus(HIDEOUS_LAUGHTER_CHEAT,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(HIDEOUS_LAUGHTER_CHEAT,100,-1)"
+data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsHarmful"
+data "TooltipAttackSave" ""
+data "TooltipPermanentWarnings" ""
+data "SpellRoll" ""
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "HIDEOUS_LAUGHTER_CHEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "HIDEOUS_LAUGHTER"
+data "RemoveConditions" ""
+data "TooltipSave" ""
+data "RemoveEvents" ""
+
+******************************************************************************************
+
+new entry "Target_IrresistibleDance_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_IrresistibleDance"
+data "TargetRadius" "30"
+data "TargetConditions" "Character() and not Self() and not Dead()"
+data "SpellProperties" "ApplyStatus(IRRESISTIBLE_DANCE_CHEAT,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(IRRESISTIBLE_DANCE_CHEAT,100,-1)"
+data "SpellFlags" "HasVerbalComponent;HasHighGroundRangeExtension;IsSpell;CannotTargetItems"
+data "TooltipAttackSave" ""
+data "ExtraDescription" ""
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "IRRESISTIBLE_DANCE_CHEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "IRRESISTIBLE_DANCE"
+data "RemoveConditions" ""
+data "TooltipSave" ""
+
+******************************************************************************************
+
+new entry "Throw_Telekinesis_Recast_Cheat"
+type "SpellData"
+data "SpellType" "Throw"
+using "Throw_Telekinesis_Recast"
+data "TargetRadius" "30"
+data "DescriptionParams" "Distance(30)"
+data "SpellFlags" "InventorySelection;RangeIgnoreVerticalThreshold;IsHarmful;HasHighGroundRangeExtension;IgnoreVisionBlock;AddFallDamageOnLand;HasVerbalComponent;HasSomaticComponent;AbortOnSpellRollFail;AbortOnSecondarySpellRollFail;CombatLogSetSingleLineRoll"
+data "ThrowableSpellProperties" ""
+data "TooltipStatusApply" ""
+data "SpellRoll" ""
+data "TooltipAttackSave" ""
+data "ThrowableSpellRoll" ""
+data "UseCosts" ""
+
+******************************************************************************************
+
+new entry "Target_SpeakWithDead_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_SpeakWithDead"
+data "TargetRadius" "10"
+data "SpellProperties" "TARGET:ApplyStatus(SELF,SPEAK_WITH_DEAD_AURA_CHEAT,100,-1);TARGET:ApplyStatus(SPEAK_WITH_DEAD,100,0)"
+data "TargetConditions" "not Tagged('BLOCK_SPEAK_WITH_DEAD') and ((Dead() and not Tagged('BEAST') and not Tagged('UNDEAD') and not Player()) or Tagged('ALLOW_SPEAK_WITH_DEAD')) and not HasStatus('SILENCED')"
+data "ExtraDescription" ""
+data "PowerLevel" "10"
+data "RitualCosts" ""
+data "UseCosts" ""
+
+new entry "SPEAK_WITH_DEAD_AURA_CHEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "SPEAK_WITH_DEAD_RECAST"
+data "AuraRadius" "20"
+data "AuraStatuses" "TARGET:IF(Tagged('HASSWDDIALOG') and Dead() and not Tagged('BEAST') and not Tagged('UNDEAD') and not Tagged('BLOCK_SPEAK_WITH_DEAD') and not Player()):ApplyStatus(SPEAK_WITH_DEAD_INTERESTING)"
+data "DisplayName" "hefd04a3eg7895g45bdg9d08gbc5e658725bc;1"
+data "Description" "SPEAK_WITH_DEAD_AURA_CHEAT_Description;1"
+data "Boosts" ""
+
+// ======================================================================================
+//                             Elder Gods - Spells - Summoning
+// ======================================================================================
+
+new entry "Target_MageHand_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MageHand"
+data "TargetRadius" "30"
+data "Cooldown" ""
+data "SpellProperties" "GROUND:IF(not HasPassive('MageHandLegerdemain', context.Source)):Summon(eddf2b83-21d3-4d6f-b958-c30f00dbbb92,-1,,,,UNSUMMON_ABLE_MAGEHAND,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(HasPassive('MageHandLegerdemain', context.Source)):Summon(eddf2b83-21d3-4d6f-b958-c30f00dbbb92,-1,,,,INVISIBLE,UNSUMMON_ABLE_MAGEHAND,SHADOWCURSE_SUMMON_CHECK);"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_CreateUndead_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_CreateUndead"
+data "TargetRadius" "30"
+data "SpellProperties" "SwitchDeathType(Explode);GROUND:Summon(f424693b-13f4-4cce-987b-7d75748c87e0, -1,,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK)"
+data "TargetConditions" "IsTargetableCorpse() and CanStand('f424693b-13f4-4cce-987b-7d75748c87e0')"
+data "RequirementConditions" ""
+data "TooltipPermanentWarnings" ""
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_PlanarAlly_Container_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_PlanarAlly_Container"
+data "TargetRadius" "30"
+data "ContainerSpells" "Target_PlanarAlly_Djinni_Cheat;Target_PlanarAlly_Deva_Banite_Cheat;Target_PlanarAlly_Cambion_Cheat"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "Target_PlanarAlly_Djinni_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_PlanarAlly_Djinni"
+data "TargetRadius" "30"
+data "SpellContainerID" "Target_PlanarAlly_Container_Cheat"
+data "SpellProperties" "Ground:Summon(c6ad9c71-43a9-410b-8e3e-219a0a7fddc8, -1,Projectile_AiHelper_Summon_Strong,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK,KNOCKED_OUT_SUMMON_DISMISS)"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "Target_PlanarAlly_Deva_Banite_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_PlanarAlly_Deva_Banite"
+data "TargetRadius" "30"
+data "SpellContainerID" "Target_PlanarAlly_Container_Cheat"
+data "SpellProperties" "Ground:Summon(af547ac0-c5fb-481d-9d67-8da3799aef5a, -1,Projectile_AiHelper_Summon_Strong,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK,KNOCKED_OUT_SUMMON_DISMISS)"
+data "Cooldown" ""
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "Target_PlanarAlly_Cambion_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_PlanarAlly_Cambion"
+data "SpellContainerID" "Target_PlanarAlly_Container_Cheat"
+data "SpellProperties" "Ground:Summon(6708ae4b-8dcf-4812-bdba-fd5fe1c343f6, -1,Projectile_AiHelper_Summon_Strong,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK,KNOCKED_OUT_SUMMON_DISMISS)"
+data "TargetRadius" "30"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+// ======================================================================================
+//                             Elder Gods - Spells - Visibility
+// ======================================================================================
+
+new entry "Shout_ProduceFlame_Cheat"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_ProduceFlame"
+data "ExtraDescription" ""
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_Daylight_Container_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Daylight_Container"
+data "TargetRadius" "30"
+data "ContainerSpells" "Target_Daylight_Cheat;Target_Daylight_Enchantment_Cheat;Target_Light_Cheat"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "Target_Daylight_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Daylight"
+data "TargetRadius" "30"
+data "SpellProperties" "GROUND:Summon(f662449b-057a-477c-a80e-9083aff62b00, -1,,,,DAYLIGHT_GROUND);GROUND:SurfaceChange(Daylight)"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "Target_Daylight_Enchantment_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Daylight_Enchantment"
+data "TargetRadius" "30"
+data "SpellRoll" ""
+data "SpellSuccess" "IF(Item()):ApplyStatus(DAYLIGHT,100,-1);IF(HasWeaponInMainHand()):ApplyEquipmentStatus(MainHand,DAYLIGHT,100,-1)"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "Target_Light_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Light"
+data "SpellContainerID" "Target_Daylight_Container_Cheat"
+data "TargetRadius" "30"
+data "SpellSuccess" "AI_IGNORE:IF(Item()):ApplyStatus(LIGHT_CHEAT,100,-1);IF(not Item()):ApplyEquipmentStatus(MainHand,LIGHT_CHEAT,100,-1);AI_ONLY:CAST:ApplyStatus(SELF, AI_STATUS_FAKE,100,-1);"
+data "PowerLevel" "10"
+data "SpellRoll" ""
+data "UseCosts" ""
+data "TooltipAttackSave" ""
+data "TooltipPermanentWarnings" ""
+data "TooltipUpcastDescription" ""
+
+new entry "LIGHT_CHEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "LIGHT"
+data "IsUnique" ""
+data "StackId" ""
+
+******************************************************************************************
+
+new entry "Target_Invisibility_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Invisibility_Greater"
+data "TargetRadius" "30"
+data "AmountOfTargets" "4"
+data "SpellProperties" "ApplyStatus(GREATER_INVISIBILITY,100,-1)"
+data "TooltipStatusApply" "ApplyStatus(GREATER_INVISIBILITY,100,-1)"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "ExtraDescription" ""
+data "TooltipUpcastDescription" ""
+
+// ======================================================================================
+//                             Elder Gods - Spells - Utilities
+// ======================================================================================
+
+new entry "Target_EnlargeReduce_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_EnlargeReduce"
+data "ContainerSpells" "Target_Enlarge_Cheat;Target_Reduce_Cheat"
+data "TargetRadius" "30"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell;IsLinkedSpellContainer"
+data "PowerLevel" "10"
+data "SpellRoll" ""
+data "TooltipAttackSave" ""
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "Target_Enlarge_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Enlarge"
+data "SpellContainerID" "Target_EnlargeReduce_Cheat"
+data "TargetRadius" "30"
+data "TargetConditions" "Character() and not HasStatus('ENLARGE')"
+data "SpellSuccess" "IF(HasStatus('REDUCE')):RemoveStatus(REDUCE);IF(not HasStatus('REDUCE')):ApplyStatus(ENLARGE,100,-1)"
+data "TooltipStatusApply" "IF(HasStatus('REDUCE')):RemoveStatus(REDUCE);IF(not HasStatus('REDUCE')):ApplyStatus(ENLARGE,100,-1)"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
+data "PowerLevel" "10"
+data "SpellRoll" ""
+data "TooltipAttackSave" ""
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "Target_Reduce_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Reduce"
+data "SpellContainerID" "Target_EnlargeReduce_Cheat"
+data "TargetRadius" "30"
+data "TargetConditions" "Character() and not HasStatus('REDUCE')"
+data "SpellSuccess" "IF(HasStatus('ENLARGE')):RemoveStatus(ENLARGE);IF(not HasStatus('ENLARGE')):ApplyStatus(REDUCE,100,-1)"
+data "TooltipStatusApply" "IF(HasStatus('ENLARGE')):RemoveStatus(ENLARGE);IF(not HasStatus('ENLARGE')):ApplyStatus(REDUCE,100,-1)"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
+data "PowerLevel" "10"
+data "SpellRoll" ""
+data "TooltipAttackSave" ""
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Shout_DisguiseSelf_Cheat"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_DisguiseSelf"
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_CreateDestroyWater_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_CreateDestroyWater"
+data "TargetRadius" "30"
+data "ContainerSpells" "Target_CreateWater_Cheat;Target_DestroyWater_Cheat"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "Target_CreateWater_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_CreateWater"
+data "SpellContainerID" "Target_CreateDestroyWater_Cheat"
+data "SpellProperties" "ApplyStatus(WET,100,3); GROUND:CreateSurface(5,0,Water);"
+data "AreaRadius" "5"
+data "TargetRadius" "30"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+new entry "Target_DestroyWater_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_DestroyWater"
+data "SpellContainerID" "Target_CreateDestroyWater_Cheat"
+data "AreaRadius" "5"
+data "TargetRadius" "30"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Teleportation_DimensionDoor_Cheat"
+type "SpellData"
+data "SpellType" "Teleportation"
+using "Teleportation_DimensionDoor"
+data "TargetRadius" "30"
+data "TargetConditions" ""
+data "OriginTargetConditions" ""
+data "SpellProperties" ""
+data "OriginSpellProperties" ""
+data "Description" "Teleportation_DimensionDoor_Cheat_Description;1"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold"
+data "CastEffect" "ab2e7fd5-7785-41ba-84b0-5d0c0b115757"
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Teleportation_ArcaneGate_Cheat"
+type "SpellData"
+data "SpellType" "Teleportation"
+using "Teleportation_ArcaneGate"
+data "TargetRadius" "30"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsSpell;CannotTargetItems;CannotTargetCharacter;RangeIgnoreVerticalThreshold"
+data "SpellProperties" "GROUND:Summon(721dcc51-9733-463b-87c5-6afcda6fef65,-1,,ArcaneGate2)"
+data "OriginSpellProperties" "GROUND:Summon(721dcc51-9733-463b-87c5-6afcda6fef65,-1,,,ArcaneGate1)"
+data "TargetConditions" "CanStand('721dcc51-9733-463b-87c5-6afcda6fef65') and not Character() and not Dead()"
+data "OriginTargetConditions" "CanStand('721dcc51-9733-463b-87c5-6afcda6fef65') and not Character() and not Item() and not Dead()"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_OpenDoors_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Knock"
+data "TargetRadius" "30"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_MistyStep_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MistyStep"
+data "TargetRadius" "30"
+data "PowerLevel" "10"
+data "UseCosts" ""
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Target_BenignTransposition_Teleport_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_BenignTransposition_Teleport"
+data "TargetRadius" "30"
+data "DisplayName" "hbcd8cc21gcd24g4f92g843fg9c32bae1b542;1"
+data "SpellProperties" "GROUND:IF(CanStand('')):TeleportSource();IF(Ally()):SwapPlaces()"
+data "RequirementConditions" ""
+data "TooltipStatusApply" ""
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipPermanentWarnings" ""
+
+******************************************************************************************
+
+new entry "Target_ArcaneRecovery_Cheat"
+type "SpellData"
+using "Shout_ArcaneRecovery"
+data "SpellType" "Target"
+data "TargetRadius" "30"
+data "TargetConditions" "Ally() and not Dead()"
+data "SpellProperties" "ResetCooldowns(UntilRest);RestoreResource(Movement,100%,0);RestoreResource(ActionPoint,100%,0);RestoreResource(BonusActionPoint,100%,0);RestoreResource(ReactionActionPoint,100%,0);RestoreResource(SpellSlot,100%,1);RestoreResource(SpellSlot,100%,2);RestoreResource(SpellSlot,100%,3);RestoreResource(SpellSlot,100%,4);RestoreResource(SpellSlot,100%,5);RestoreResource(SpellSlot,100%,6);RestoreResource(SpellSlot,100%,7);RestoreResource(SpellSlot,100%,8);RestoreResource(SpellSlot,100%,9);RestoreResource(SpellSlot,100%,10);RestoreResource(WarlockSpellSlot,100%,1);RestoreResource(WarlockSpellSlot,100%,2);RestoreResource(WarlockSpellSlot,100%,3);RestoreResource(WarlockSpellSlot,100%,4);RestoreResource(WarlockSpellSlot,100%,5);RestoreResource(WarlockSpellSlot,100%,6);RestoreResource(WarlockSpellSlot,100%,7);RestoreResource(WarlockSpellSlot,100%,8);RestoreResource(WarlockSpellSlot,100%,9);RestoreResource(WarlockSpellSlot,100%,10);RestoreResource(ArcaneRecoveryPoint,100%,0);RestoreResource(BardicInspiration,100%,0);RestoreResource(ChannelDivinity,100%,0);RestoreResource(ChannelOath,100%,0);RestoreResource(FungalInfestationCharge,100%,0);RestoreResource(HitDice,100%,0);RestoreResource(Interrupt_HellishRebukeTiefling_Charge,100%,0);RestoreResource(Interrupt_HellishRebukeWarlockMI_Charge,100%,0);RestoreResource(KiPoint,100%,0);RestoreResource(LayOnHandsCharge,100%,0);RestoreResource(LuckPoint,100%,0);RestoreResource(NaturalRecoveryPoint,100%,0);RestoreResource(Rage,100%,0);RestoreResource(RitualPoint,100%,0);RestoreResource(ShadowSpellSlot,100%,0);RestoreResource(SorceryPoint,100%,0);RestoreResource(SuperiorityDie,100%,0);RestoreResource(TidesOfChaos,100%,0);RestoreResource(WarPriestActionPoint,100%,0);RestoreResource(WeaponActionPoint,100%,0);RestoreResource(WildShape,100%,0)"
+data "Description" "Target_ArcaneRecovery_Cheat_Description;1"
+data "ContainerSpells" ""
+data "Requirements" ""
+data "SpellFlags" ""
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipPermanentWarnings" ""
+
+// ======================================================================================
+//                             Elder Gods - Spells - Illithid
+// ======================================================================================
+
+new entry "Target_TAD_BlackHole_Recast_Cheat"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_TAD_BlackHole_Recast"
+data "SpellRoll" ""
+data "TooltipAttackSave" ""
+data "TargetRadius" "30"
+data "AreaRadius" "10"
+data "SpellProperties" "Force(-10, TargetToEntity, Neutral, false, true)"
+data "SpellFlags" "IsHarmful;DisableBlood"
+data "TooltipStatusApply" ""
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Shout_Repulsor_Cheat"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Repulsor"
+data "Cooldown" ""
+data "AreaRadius" "10"
+data "SpellSuccess" "Force(10)"
+data "DescriptionParams" "Distance(10)"
+data "SpellRoll" ""
+data "SpellFail" ""
+data "TooltipDamageList" ""
+data "TooltipAttackSave" ""
+data "TooltipOnSave" ""
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+******************************************************************************************
+
+new entry "Shout_TAD_DisplacerBeast_Cheat"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_TAD_DisplacerBeast"
+data "Cooldown" ""
+data "ExtraDescription" ""
+data "UseCosts" ""
+data "PowerLevel" "10"
+data "TooltipUpcastDescription" ""
+
+// ======================================================================================
+//                          Elder Gods - Spells - Bonus (Side Panel)
+// ======================================================================================
+
+new entry "Projectile_Fly_Spell_Cheat"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_Fly_Spell"
+data "TargetRadius" "100"
+data "UseCosts" ""
+
+// ======================================================================================
+//                                     END OF FILE
+// ======================================================================================
 
 
 

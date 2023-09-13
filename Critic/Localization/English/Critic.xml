@@ -1,17 +1,163 @@
 
 <contentList date="9/3/2023 18:38">
-  <content contentuid="hbb21816cga013g4799g9e3bgf6710b10043d" version="1">Grants you guarenteed crits.</content>
-  <content contentuid="Feat_ElderGods_DisplayName" version="1">Feat of Elder Gods</content>
-  <content contentuid="Generic_ElderGods_Description" version="1">This feat holds the power of Elder Gods.</content>
-  <content contentuid="hd1953a23g140eg4843g9fccg1d46813b7a63" version="1">Criticals of Elder Gods</content>
-  <content contentuid="Passive_Generic_ExtraDescription" version="1">Can be toggled on and off.</content>
-  
-  <content contentuid="Passive_ADHD_DisplayName" version="1">Actions of ADHD</content>
-	<content contentuid="Passive_ADHD_Description" version="1">Actions are increased by 6 points.</content>
-  
-  <content contentuid="Passive_PartialImmunityElderGods_DisplayName" version="1">Partial Immunity of Elder Gods</content>
+
+<content contentuid="Feat_ElderGods_DisplayName" version="1">Feat of Elder Gods</content>
+<content contentuid="Generic_ElderGods_Description" version="1">This feat holds the power of Elder Gods.</content>
+<content contentuid="Passive_Generic_ExtraDescription" version="1">Can be toggled on and off.</content>
+	
+	<content contentuid="Passive_SpellsElderGods_DisplayName" version="1">Spells of Elder Gods</content>
+	<content contentuid="Passive_SpellsElderGods_Description" version="1">Unlock all damage spells of Elder Gods.</content>
+	
+	<content contentuid="Passive_BuffsElderGods_DisplayName" version="1">Buffs of Elder Gods</content>
+	<content contentuid="Passive_BuffsElderGods_Description" version="1">Unlock all buff spells of Elder Gods.</content>
+	
+	<content contentuid="Passive_CombinationsElderGods_DisplayName" version="1">Combinations of Elder Gods</content>
+	<content contentuid="Passive_CombinationsElderGods_Description" version="1">Unlock all combined spells of Elder Gods.</content>
+	
+	<content contentuid="Passive_RestorationElderGods_DisplayName" version="1">Restoration of Elder Gods</content>
+	<content contentuid="Passive_RestorationElderGods_Description" version="1">Unlock all restoration spells of Elder Gods.</content>
+	
+	<content contentuid="Passive_TricksElderGods_DisplayName" version="1">Tricks of Elder Gods</content>
+	<content contentuid="Passive_TricksElderGods_Description" version="1">Unlock all trick spells of Elder Gods.</content>
+	
+	<content contentuid="Passive_DominanceElderGods_DisplayName" version="1">Dominance of Elder Gods</content>
+	<content contentuid="Passive_DominanceElderGods_Description" version="1">Unlock all dominance spells of Elder Gods.</content>
+	
+	<content contentuid="Passive_SummonElderGods_DisplayName" version="1">Summon of Elder Gods</content>
+	<content contentuid="Passive_SummonElderGods_Description" version="1">Unlock all summoning spells of Elder Gods.</content>
+	
+	<content contentuid="Passive_VisibilityElderGods_DisplayName" version="1">Visibility of Elder Gods</content>
+	<content contentuid="Passive_VisibilityElderGods_Description" version="1">Unlock all visibility spells of Elder Gods.</content>
+	
+	<content contentuid="Passive_UtilitiesElderGods_DisplayName" version="1">Utilities of Elder Gods</content>
+	<content contentuid="Passive_UtilitiesElderGods_Description" version="1">Unlock all utilities spells of Elder Gods.</content>
+	
+	<content contentuid="Passive_IllithidElderGods_DisplayName" version="1">Illithid Spells of Elder Gods</content>
+	<content contentuid="Passive_IllithidElderGods_Description" version="1">Unlock all illithid spells of Elder Gods.</content>
+	
+	<content contentuid="Passive_SidePanelElderGods_DisplayName" version="1">Bonus Spells of Elder Gods</content>
+	<content contentuid="Passive_SidePanelElderGods_Description" version="1">Unlock all bonus spells (Grant Flight), located in the right side panel.</content>
+	
+	<content contentuid="Passive_TouchElderGods_DisplayName" version="1">Touch of Elder Gods</content>
+	<content contentuid="Passive_TouchElderGods_Description" version="1">All incoming damage is nullified.</content>
+	
+	<content contentuid="Passive_ResistanceElderGods_DisplayName" version="1">Resistance of Elder Gods</content>
+	<content contentuid="Passive_ResistanceElderGods_Description" version="1">All incoming damage is halved.</content>
+	
+	<content contentuid="Passive_CriticalHitElderGods_DisplayName" version="1">Critical Hit of Elder Gods</content>
+	<content contentuid="Passive_CriticalHitElderGods_Description" version="1">Critical Hit against enemies is always 100%.</content>
+	
+	<content contentuid="Passive_CriticalChanceElderGods_DisplayName" version="1">Critical Chance of Elder Gods</content>
+	<content contentuid="Passive_CriticalChanceElderGods_Description" version="1">Enemies cannot land a Critical Hit on you.</content>
+
+	<content contentuid="Passive_CriticalMissElderGods_DisplayName" version="1">Critical Miss of Elder Gods</content>
+	<content contentuid="Passive_CriticalMissElderGods_Description" version="1">Enemies will always have a Critical Miss on you.</content>
+
+	<content contentuid="Passive_ImmunityElderGods_DisplayName" version="1">Immunity of Elder Gods</content>
+	<content contentuid="Passive_ImmunityElderGods_Description" version="1">Gain immunity against everything, but some spells might not have an affect on you.</content>
+
+	<content contentuid="Passive_PartialImmunityElderGods_DisplayName" version="1">Partial Immunity of Elder Gods</content>
 	<content contentuid="Passive_PartialImmunityElderGods_Description" version="1">Gain immunity against (nearly) every status effect, except for Polymorph, Incapacitated and Invisibility, as certain spells rely on them.</content>
 
-  <content contentuid="Passive_ExtraDamageElderGods_DisplayName" version="1">Extra Damage of Elder Gods</content>
+	<content contentuid="Passive_AttackRollElderGods_DisplayName" version="1">Attack Roll of Elder Gods</content>
+	<content contentuid="Passive_AttackRollBonusElderGods_DisplayName" version="1">Attack Bonus of Elder Gods</content>
+	<content contentuid="Passive_AttackRollElderGods_Description" version="1">Attack Roll and Hit Chance are increased by [1] points.</content>
+
+	<content contentuid="Passive_AttackRollAdvantageElderGods_DisplayName" version="1">Attack Advantage of Elder Gods</content>
+	<content contentuid="Passive_AttackRollAdvantageElderGods_Description" version="1">Gain Advantage against all enemies.</content>
+	
+	<content contentuid="Passive_DisadvantageElderGods_DisplayName" version="1">Disadvantage of Elder Gods</content>
+	<content contentuid="Passive_DisadvantageElderGods_Description" version="1">Characters have disadvantage against you.</content>
+
+	<content contentuid="Passive_ActionsElderGods_DisplayName" version="1">Actions of Elder Gods</content>
+	<content contentuid="Passive_ActionsElderGods_Description" version="1">Actions are increased by 3 points.</content>
+	
+	<content contentuid="Passive_ExtraActionsElderGods_DisplayName" version="1">Extra Actions of Elder Gods</content>
+	<content contentuid="Passive_ExtraActionsElderGods_Description" version="1">Actions are additionally increased by 6 points.</content>
+	
+	<content contentuid="Passive_InitiativeElderGods_DisplayName" version="1">Initiative of Elder Gods</content>
+	<content contentuid="Passive_InitiativeElderGods_Description" version="1">Initiative is increased by 30 points.</content>
+	
+	<content contentuid="Passive_ExtraDamageElderGods_DisplayName" version="1">Extra Damage of Elder Gods</content>
 	<content contentuid="Passive_ExtraDamageElderGods_Description" version="1">Do a 10d4 roll for extra force damage with weapons or a 10d4 roll for bonus damage with spells.</content>
+	
+	<content contentuid="Passive_LuckElderGods_DisplayName" version="1">Luck of Elder Gods</content>
+	
+	<content contentuid="Passive_SkillProficiencyElderGods_DisplayName" version="1">Skill Proficiency of Elder Gods</content>
+	<content contentuid="Passive_SkillProficiencyElderGods_Description" version="1">Gain Skill Proficiency.</content>
+	
+	<content contentuid="Passive_AbilityElderGods_DisplayName" version="1">Abilities of Elder Gods</content>
+	<content contentuid="Passive_AbilityElderGods_Description" version="1">Abilities are increased by 10 points.</content>
+	
+	<content contentuid="Passive_SpeedElderGods_DisplayName" version="1">Speed of Elder Gods</content>
+	<content contentuid="Passive_SpeedElderGods_Description" version="1">Movement range is increased by 50 meters.</content>
+	
+	<content contentuid="Passive_ExtraSpeedElderGods_DisplayName" version="1">Extra Speed of Elder Gods</content>
+	<content contentuid="Passive_ExtraSpeedElderGods_Description" version="1">Movement range is additionally increased by 100 meters.</content>
+	
+	<content contentuid="Passive_JumpElderGods_DisplayName" version="1">Jump of Elder Gods</content>
+	<content contentuid="Passive_JumpElderGods_Description" version="1">Jump range is multiplied 10 times and Fall Damage is ignored.</content>
+	
+	<content contentuid="Passive_ArmorClassElderGods_DisplayName" version="1">Armor Class of Elder Gods</content>
+	<content contentuid="Passive_ArmorClassElderGods_Description" version="1">Armor Class is increased by 30 points.</content>
+	
+	<content contentuid="Passive_HealthElderGods_DisplayName" version="1">Health of Elder Gods</content>
+	<content contentuid="Passive_HealthElderGods_Description" version="1">Bonus Health is increased by 30 points.</content>
+
+	<content contentuid="Passive_WeightElderGods_DisplayName" version="1">Weight of Elder Gods</content>
+	<content contentuid="Passive_WeightElderGods_Description" version="1">Carry Capacity is multiplied 30 times.</content>
+	
+	<content contentuid="Passive_SpellCastingElderGods_DisplayName" version="1">Spell Casting of Elder Gods</content>
+	<content contentuid="Passive_SpellCastingElderGods_Description" version="1">Spell casting won't consume any spell slots.</content>
+	
+	<content contentuid="Passive_WarlockGraspElderGods_DisplayName" version="1">Warlock Grasp of Elder Gods</content>
+	<content contentuid="Passive_WarlockGraspElderGods_Description" version="1">Warlock spell casting won't consume any spell slots.</content>
+	
+	<content contentuid="Passive_ResourcesElderGods_DisplayName" version="1">Resources of Elder Gods</content>
+	<content contentuid="Passive_ResourcesElderGods_Description" version="1">Gain unlimited uses for the following resources: ArcaneRecoveryPoints, BardicInspiration, ChannelDivinity, ChannelOath, FungalInfestationCharge, HitDice, KiPoints, LayOnHandsCharges, LuckPoints, NaturalRecoveryPoints, Rage, RitualPoints, ShadowSpellSlots, SorceryPoints, SuperiorityDie, TidesOfChaos, WarPriestActionPoints, WeaponActionPoints and WildShape.</content>
+	
+	<content contentuid="Passive_AdvantageElderGods_DisplayName" version="1">Advantage of Elder Gods</content>
+	<content contentuid="Passive_AdvantageElderGods_Description" version="1">Gain Advantage on dice rolls for Abilities, SavingThrows and Concentration.</content>
+	
+	<content contentuid="Passive_RollBonusElderGods_DisplayName" version="1">Roll Bonus of Elder Gods</content>
+	<content contentuid="Passive_RollBonusElderGods_Description" version="1">Roll Bonus is increased by [1] points for Skills, Abilities, and Saving Throws.</content>
+	
+	<content contentuid="Passive_SkillsElderGods_DisplayName" version="1">Skills of Elder Gods</content>
+	<content contentuid="Passive_SkillsElderGods_Description" version="1">Skills are increased by 20 points.</content>
+	
+	<content contentuid="Passive_ProficiencyElderGods_DisplayName" version="1">Weapon Proficiency of Elder Gods</content>
+	<content contentuid="Passive_ProficiencyElderGods_Description" version="1">Gain Proficiency with all weapons.</content>
+	
+	<content contentuid="Passive_ArmorProficiencyElderGods_DisplayName" version="1">Armor Proficiency of Elder Gods</content>
+	<content contentuid="Passive_ArmorProficiencyElderGods_Description" version="1">Gain Proficiency with armors and shields.</content>
+	
+	<content contentuid="Passive_PerformanceElderGods_DisplayName" version="1">Performance of Elder Gods</content>
+	<content contentuid="Passive_PerformanceElderGods_Description" version="1">Gain Proficiency with all musical instruments.</content>
+	
+	<content contentuid="Shout_Buff_Cheat_DisplayName" version="1">Buffs of Elder Gods</content>
+	<content contentuid="Shout_Buff_Cheat_Description" version="1">Give all buffs of Elder Gods.</content>
+	
+	<content contentuid="Shout_Debuff_Cheat_DisplayName" version="1">Debuff of Elder Gods</content>
+	<content contentuid="Shout_Debuff_Cheat_Description" version="1">Remove all buffs of Elder Gods.</content>
+
+	<content contentuid="Teleportation_Revivify_Cheat_Description" version="1">Bring a creature back to life.</content>
+	
+	<content contentuid="Target_GreaterRestoration_Cheat_Description" version="1">The ultimate cure: It removes negative conditions and status effects.</content>
+	
+	<content contentuid="Target_DominatePerson_Cheat_DisplayName" version="1">Dominate Creature</content>
+	<content contentuid="Target_DominatePerson_Cheat_Description" version="1">Make a creature fight alongside you. It will stay friendly until a Long Rest.</content>
+	
+	<content contentuid="Target_HoldPerson_Cheat_DisplayName" version="1">Hold Creature</content>
+	<content contentuid="Target_HoldPerson_Cheat_Description" version="1">Hold an enemy still. The creature is Paralyzed and can't move, act or react.</content>
+	
+	<content contentuid="Target_FleshToStone_Cheat_Description" version="1">Gaze upon your enemies and turn them into stone...forever.</content>
+
+	<content contentuid="Target_CrownOfMadness_Cheat_Description" version="1">Instill madness, making the target attack the creature closest to it (other than you), even if it's allied.</content>
+
+	<content contentuid="SPEAK_WITH_DEAD_AURA_CHEAT_Description" version="1">Casts an aura up to 20 meters, bestowing a green glow on corpses that have something to say.</content>
+	
+	<content contentuid="Teleportation_DimensionDoor_Cheat_Description" version="1">Teleport any item or character to a place you can see.</content>
+
+	<content contentuid="Target_ArcaneRecovery_Cheat_Description" version="1">Replenish all kind of resources, including Action Points, Spell Slots, Movement, Cooldowns and more.</content>
+
 </contentList>
