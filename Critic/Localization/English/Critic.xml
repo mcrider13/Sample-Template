@@ -1,5 +1,17 @@
 
 <contentList date="9/3/2023 18:38">
-  <content contentuid="hbb21816cga013g4799g9e3bgf6710b10043d" version="1">Guarentees Critical Hits and grants you more action points.</content>,
-  <content contentuid="hd1953a23g140eg4843g9fccg1d46813b7a63" version="1">Critic</content>
+  <content contentuid="hbb21816cga013g4799g9e3bgf6710b10043d" version="1">Grants you guarenteed crits.</content>
+  <content contentuid="Feat_ElderGods_DisplayName" version="1">Feat of Elder Gods</content>
+  <content contentuid="Generic_ElderGods_Description" version="1">This feat holds the power of Elder Gods.</content>
+  <content contentuid="hd1953a23g140eg4843g9fccg1d46813b7a63" version="1">Criticals of Elder Gods</content>
+  <content contentuid="Passive_Generic_ExtraDescription" version="1">Can be toggled on and off.</content>
+  
+  <content contentuid="Passive_ADHD_DisplayName" version="1">Actions of ADHD</content>
+	<content contentuid="Passive_ADHD_Description" version="1">Actions are increased by 6 points.</content>
+  
+  <content contentuid="Passive_PartialImmunityElderGods_DisplayName" version="1">Partial Immunity of Elder Gods</content>
+	<content contentuid="Passive_PartialImmunityElderGods_Description" version="1">Gain immunity against (nearly) every status effect, except for Polymorph, Incapacitated and Invisibility, as certain spells rely on them.</content>
+
+  <content contentuid="Passive_ExtraDamageElderGods_DisplayName" version="1">Extra Damage of Elder Gods</content>
+	<content contentuid="Passive_ExtraDamageElderGods_Description" version="1">Do a 10d4 roll for extra force damage with weapons or a 10d4 roll for bonus damage with spells.</content>
 </contentList>

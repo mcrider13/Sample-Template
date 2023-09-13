@@ -5,9 +5,9 @@
         <node id="root">
             <children>
                	<node id="FeatDescription">
-                    <attribute id="Description" type="TranslatedString" handle="hbb21816cga013g4799g9e3bgf6710b10043d" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="hd1953a23g140eg4843g9fccg1d46813b7a63" version="1"/>
-                    <attribute id="ExactMatch" type="FixedString" value="Critic"/>
+                    <attribute id="Description" type="TranslatedString" handle="Generic_ElderGods_Description" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="Feat_ElderGods_DisplayName" version="1"/>
+                    <attribute id="ExactMatch" type="FixedString" value="Feat of Elder Gods"/>
                     <attribute id="FeatId" type="guid" value="e093cbb9-560e-4d4c-823a-8139f0432369"/>
                     <attribute id="UUID" type="guid" value="c54a2a70-33aa-4948-9f3a-eedaa771477e"/>
                 </node>

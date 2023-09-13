@@ -6,8 +6,8 @@
             <children>
 				<node id="Feat">
                     <attribute id="CanBeTakenMultipleTimes" type="bool" value="false"/>
-                    <attribute id="Name" type="FixedString" value="Critic"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Passive_Critic"/>
+                    <attribute id="Name" type="FixedString" value="Feat of Elder Gods"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Passive_Critic;Passive_ADHD;Passive_PartialImmunityElderGods;Passive_ExtraDamageElderGods"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="Requirements" type="LSString" value=""/>
                     <attribute id="UUID" type="guid" value="e093cbb9-560e-4d4c-823a-8139f0432369"/>
