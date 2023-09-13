@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="322"/>
+    <region id="Feats">
+        <node id="root">
+            <children>
+				<node id="Feat">
+                    <attribute id="CanBeTakenMultipleTimes" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="Critic"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Passive_Critic"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Requirements" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="e093cbb9-560e-4d4c-823a-8139f0432369"/>
+                </node>
+			</children>
+        </node>
+    </region>
+</save>

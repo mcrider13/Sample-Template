@@ -1,0 +1,8 @@
+<!--
+  You'll want to use Modder's Multitool to generate the contentuid value, by ticking the "Handle" checkbox and hitting Generate
+-->
+
+<contentList date="9/3/2023 18:38">
+  <content contentuid="hbb21816cga013g4799g9e3bgf6710b10043d" version="1">Guarentees Critical Hits and grants you more action points.</content>,
+  <content contentuid="hd1953a23g140eg4843g9fccg1d46813b7a63" version="1">Critic</content>
+</contentList>
